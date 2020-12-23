@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3723045913386045532}
   - component: {fileID: 3457365746824851674}
+  - component: {fileID: 8517229474924222812}
   m_Layer: 0
   m_Name: Opposite Car
   m_TagString: Untagged
@@ -82,3 +83,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8517229474924222812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3871122323921359136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d45a940f8db0da9428bf31fb75cf138b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoint:
+  - {fileID: 6219309245431510509, guid: ad6c7960887312448a056ac19fec4455, type: 3}
+  - {fileID: 8389435341046982455, guid: 5d22b0241673f3e4ba5a24745b5d90ac, type: 3}
+  - {fileID: 3930652243195346261, guid: 2a8ef67a5d134b04d9b7d1729c4becf8, type: 3}
+  - {fileID: 7485607299486544860, guid: ea53a75473749e34d8701db420351641, type: 3}
+  obstacleMoveSpeed: 0.02

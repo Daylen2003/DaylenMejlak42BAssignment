@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b73265b0d6a9be458e800a0dfd4663a, type: 3}
+  m_Name: Wav2
+  m_EditorClassIdentifier: 
+  ObstaclePrefeb: {fileID: 2518431456143534972, guid: 703dde000a2e0464d9d74ea166117815, type: 3}
+  timeBetweenSpawns: 0.5
+  numberOfOstacles: 2
+  pathPrefeb: {fileID: 5300073315061099257, guid: f869044ac27a76f4588b66572cebd642, type: 3}
+  obstacleMoveSpeed: 0.01
