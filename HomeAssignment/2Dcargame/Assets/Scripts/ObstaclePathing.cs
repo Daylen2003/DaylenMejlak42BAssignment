@@ -5,16 +5,17 @@ using UnityEngine;
 public class ObstaclePathing : MonoBehaviour
 {
     [SerializeField] List<Transform> Waypoint1;
-    [SerializeField] float obstacleMoveSpeed = 0.02f;
 
-    [SerializeField] WavConfig waveConfig;
+    [SerializeField] float ObstacleMoveSpeed = 2f; 
+
+    
 
     int waypointIndex = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        Waypoint1 = waveConfig.GetWayPoints();
+        
         transform.position = Waypoint1[waypointIndex].transform.position;
     }
 
@@ -32,9 +33,9 @@ public class ObstaclePathing : MonoBehaviour
 
             targetPosition.z = 0f;
 
-            var obstacleMovment = obstacleMoveSpeed * Time.deltaTime;
+            var obstacleMovment = ObstacleMoveSpeed * Time.deltaTime;
 
-            transform.position = Vector2.MoveTowards(transform.position, targetPosition, obstacleMoveSpeed);
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, obstacleMovment);
 
             if(transform.position == targetPosition)
             {
@@ -47,4 +48,6 @@ public class ObstaclePathing : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    
 }

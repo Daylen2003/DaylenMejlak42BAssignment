@@ -348,6 +348,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eeca985b4e4df374286f49ffc3dcf3b7, type: 3}
+--- !u!1 &754092658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8024837534277517300, guid: d81b064ef4b867f43aff7fb998509677, type: 3}
+  m_PrefabInstance: {fileID: 8464860586674280710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &754092659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754092658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c089a51b7c5984c9f9cc1b6d3965dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 8
+  padding: 0.4
 --- !u!4 &794117965 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1375486165450669481, guid: d6cfc4da75aad7d4eaabfea03b7fd299, type: 3}
@@ -462,8 +481,7 @@ MonoBehaviour:
   - {fileID: 978006489}
   - {fileID: 794117965}
   - {fileID: 262553067}
-  obstacleMoveSpeed: 0.01
-  waveConfig: {fileID: 0}
+  ObstacleMoveSpeed: 2
 --- !u!4 &1292750592 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4829845508796171231, guid: d6cfc4da75aad7d4eaabfea03b7fd299, type: 3}
@@ -548,8 +566,7 @@ MonoBehaviour:
   - {fileID: 422229995}
   - {fileID: 1837679071}
   - {fileID: 649248205}
-  obstacleMoveSpeed: 0.01
-  waveConfig: {fileID: 0}
+  ObstacleMoveSpeed: 2
 --- !u!1 &1472556778 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1537898201682935918, guid: eeca985b4e4df374286f49ffc3dcf3b7, type: 3}
@@ -572,8 +589,7 @@ MonoBehaviour:
   - {fileID: 860919400}
   - {fileID: 1114387800}
   - {fileID: 1214575011}
-  obstacleMoveSpeed: 0.01
-  waveConfig: {fileID: 0}
+  ObstacleMoveSpeed: 2
 --- !u!4 &1474696129 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8257916093693050645, guid: f869044ac27a76f4588b66572cebd642, type: 3}
@@ -601,8 +617,7 @@ MonoBehaviour:
   - {fileID: 482223178}
   - {fileID: 1119670161}
   - {fileID: 1474696129}
-  obstacleMoveSpeed: 0.01
-  waveConfig: {fileID: 0}
+  ObstacleMoveSpeed: 2
 --- !u!4 &1837679071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8729851831284765469, guid: d136adc60c396574795a411c15e9caba, type: 3}
