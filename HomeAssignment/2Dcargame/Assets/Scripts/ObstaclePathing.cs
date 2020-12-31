@@ -6,16 +6,16 @@ public class ObstaclePathing : MonoBehaviour
 {
     [SerializeField] List<Transform> Waypoint1;
 
-    [SerializeField] float ObstacleMoveSpeed = 2f; 
+    [SerializeField] float ObstacleMoveSpeed = 2f;
 
-    
+    [SerializeField] WavConfig waveConfig;
 
     int waypointIndex = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Waypoint1 = waveConfig.GetWayPoints();
         transform.position = Waypoint1[waypointIndex].transform.position;
     }
 
@@ -49,5 +49,9 @@ public class ObstaclePathing : MonoBehaviour
         }
     }
 
+    public void settingWaveConfig(WavConfig waveConfigToset)
+    {
+        waveConfig = waveConfigToset;  
+    }
     
 }
