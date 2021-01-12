@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] AudioClip playerDeathSound;
+    
+    [SerializeField] [Range(0, 1)] float playerDeathSoundVolume = 0.75f;
+
+    [SerializeField] float health = 50f; 
+
     [SerializeField] float moveSpeed = 8f;
 
     [SerializeField] float padding = 0.4f;
@@ -20,6 +26,29 @@ public class Player : MonoBehaviour
     void Update()
     {
         moveCar();
+    }
+
+    private void OnTriggerEnter2D(Collider2D otherObject)
+    {
+        DamageDealer dmgDealer = otherObject.gameObject.GetComponent<DamageDealer>();
+
+        ProcessDamage(dmgDealer);
+    }
+
+    private void ProcessDamage(DamageDealer dmgDealer)
+    {
+        health -= dmgDealer.GetDamage();
+
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+        AudioSource.PlayClipAtPoint(playerDeathSound, Camera.main.transform.position, playerDeathSoundVolume);
     }
 
     private void SetUpMoveBoundaries()

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b73265b0d6a9be458e800a0dfd4663a, type: 3}
   m_Name: Wav5
   m_EditorClassIdentifier: 
-  ObstaclePrefeb: {fileID: 1361017353500007561, guid: 277d0b567928fa6488d0c4ff185aee5a, type: 3}
+  ObstaclePrefeb: {fileID: 3354199926838139301, guid: 703dde000a2e0464d9d74ea166117815, type: 3}
   timeBetweenSpawns: 0.5
   numberOfOstacles: 1
-  pathPrefeb: {fileID: 7333955395430454748, guid: d6cfc4da75aad7d4eaabfea03b7fd299, type: 3}
+  pathPrefeb: {fileID: 5300073315061099257, guid: f869044ac27a76f4588b66572cebd642, type: 3}
   obstacleMoveSpeed: 0.01
