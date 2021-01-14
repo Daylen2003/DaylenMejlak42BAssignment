@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 1170538502047163760}
   - component: {fileID: 3835622848543873221}
   - component: {fileID: 7073365482404511224}
-  m_Layer: 0
+  - component: {fileID: -1944262728265934751}
+  m_Layer: 9
   m_Name: road-block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170538502047163763}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.77, y: 5.72, z: 0}
-  m_LocalScale: {x: 0.26151708, y: 0.26151708, z: 0.26151708}
+  m_LocalPosition: {x: -0.9669, y: 5.9169, z: 0}
+  m_LocalScale: {x: 0.18457362, y: 0.18457362, z: 0.18457362}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -176,3 +177,25 @@ PolygonCollider2D:
       - {x: 1.7199999, y: 0.84999996}
       - {x: 1.7199999, y: -0.76}
       - {x: -1.7199999, y: -0.76}
+--- !u!114 &-1944262728265934751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170538502047163763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f530ca47ef58334596d95c6e96469f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObstacleDeathSound: {fileID: 8300000, guid: 9dd6ff7463670594daa1ea667acfe1d7, type: 3}
+  ObstacleDeathSoundVolume: 0.1
+  deathExplosion: {fileID: 1512812085245662810, guid: 6166dbdbde9a8d6478395fa705401e4a, type: 3}
+  durationOfExplosion: 1
+  health: 1
+  Shot: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  obstacleBullet: {fileID: 0}
+  obstactleBulletSpeed: 0.3

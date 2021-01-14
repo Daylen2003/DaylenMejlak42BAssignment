@@ -140,6 +140,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70c089a51b7c5984c9f9cc1b6d3965dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerDeathSound: {fileID: 0}
+  playerDeathSoundVolume: 0.75
+  health: 50
   moveSpeed: 8
   padding: 0.4
 --- !u!1 &1105586360
@@ -459,7 +462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1214980345659670896, guid: 3a079e995de6acb4893b5dcbd7844193, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1214980345659670896, guid: 3a079e995de6acb4893b5dcbd7844193, type: 3}
       propertyPath: m_LocalRotation.x
@@ -567,6 +570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Path(3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2284808856344714905, guid: d136adc60c396574795a411c15e9caba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.17
+      objectReference: {fileID: 0}
     - target: {fileID: 3103460985197855584, guid: d136adc60c396574795a411c15e9caba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -610,6 +617,18 @@ PrefabInstance:
     - target: {fileID: 3103460985197855584, guid: d136adc60c396574795a411c15e9caba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364555278124140123, guid: d136adc60c396574795a411c15e9caba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353398834755515383, guid: d136adc60c396574795a411c15e9caba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729851831284765469, guid: d136adc60c396574795a411c15e9caba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d136adc60c396574795a411c15e9caba, type: 3}
