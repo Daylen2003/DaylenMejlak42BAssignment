@@ -187,7 +187,8 @@ MonoBehaviour:
   durationOfExplosion: 1
   health: 1
   Shot: 0
-  minTimeBetweenShots: 0.2
-  maxTimeBetweenShots: 2
+  minTimeBetweenShots: 3
+  maxTimeBetweenShots: 4
   obstacleBullet: {fileID: 1256922090384739981, guid: 625b9b57d31d38f4fb08b921e1885126, type: 3}
-  obstactleBulletSpeed: 5
+  obstactleBulletSpeed: 4
+  scoreValue: 5

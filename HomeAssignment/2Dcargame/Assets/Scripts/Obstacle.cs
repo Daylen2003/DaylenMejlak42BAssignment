@@ -38,8 +38,6 @@ public class Obstacle : MonoBehaviour
         AudioSource.PlayClipAtPoint(ObstacleDeathSound, Camera.main.transform.position, ObstacleDeathSoundVolume);
         GameObject explosion = Instantiate(deathExplosion, transform.position, Quaternion.identity);
         Destroy(explosion, durationOfExplosion);
-
-        FindObjectOfType<GameSession>().AddToScore(scoreValue);
     }
     private void Start()
     {

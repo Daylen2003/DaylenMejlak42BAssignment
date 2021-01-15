@@ -43,8 +43,9 @@ public class Player : MonoBehaviour
         health -= dmgDealer.GetDamage();
         Score = FindObjectOfType<GameSession>().GettingScore();
 
-        if (health <= 0 && Score <100)
+        if (health <= 0 && Score < 100)
         {
+            
             Die();
         }
     }

@@ -12,7 +12,12 @@ public class Shrederer : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D otherObject)
     {
+        int scorevalue = 5;        
         Destroy(otherObject.gameObject);
+        FindObjectOfType<GameSession>().AddToScore(scorevalue);
+
+
+
     }
          
 }
