@@ -17,6 +17,7 @@ public class Obstacle : MonoBehaviour
     [SerializeField] GameObject obstacleBullet;
     [SerializeField] float obstactleBulletSpeed = 0.3f;
 
+    [SerializeField] int scoreValue = 5;
     
 
     private void OnTriggerEnter2D(Collider2D otherObject)
@@ -37,6 +38,8 @@ public class Obstacle : MonoBehaviour
         AudioSource.PlayClipAtPoint(ObstacleDeathSound, Camera.main.transform.position, ObstacleDeathSoundVolume);
         GameObject explosion = Instantiate(deathExplosion, transform.position, Quaternion.identity);
         Destroy(explosion, durationOfExplosion);
+
+        FindObjectOfType<GameSession>().AddToScore(scoreValue);
     }
     private void Start()
     {
