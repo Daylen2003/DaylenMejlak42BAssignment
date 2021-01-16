@@ -51,9 +51,9 @@ public class ObstacleSpawner : MonoBehaviour
         
         foreach (WavConfig currentWave in waveConfigList)
         {
-            
 
-            yield return StartCoroutine(SpawnAllEnemiesInWave(currentWave));
+
+            yield return StartCoroutine(SpawnAllEnemiesInWave(currentWave)); 
         }
     }
 }
