@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     
     [SerializeField] [Range(0, 1)] float playerDeathSoundVolume = 0.75f;
 
-    [SerializeField] float health = 50f; 
+    [SerializeField] int health = 50; 
 
     [SerializeField] float moveSpeed = 8f;
 
@@ -31,6 +31,11 @@ public class Player : MonoBehaviour
         moveCar();
     }
 
+    public int GetHealth()
+    {
+        return health; 
+    }
+
     private void OnTriggerEnter2D(Collider2D otherObject)
     {
         DamageDealer dmgDealer = otherObject.gameObject.GetComponent<DamageDealer>();
@@ -45,8 +50,15 @@ public class Player : MonoBehaviour
 
         if (health <= 0 && Score < 100)
         {
-            
+            health = 0;
             Die();
+            FindObjectOfType<Level>().LoadGameOverScene();
+        }
+        else if (health <= 0 && Score >= 100)
+        {
+            health = 0; 
+            Die();
+            FindObjectOfType<Level>().LoadWinnerScene();
         }
     }
 
@@ -54,7 +66,7 @@ public class Player : MonoBehaviour
     {
         Destroy(gameObject);
         AudioSource.PlayClipAtPoint(playerDeathSound, Camera.main.transform.position, playerDeathSoundVolume);
-        FindObjectOfType<Level>().LoadGameOverScene();
+       
     }
 
     private void SetUpMoveBoundaries()
